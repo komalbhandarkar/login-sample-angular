@@ -21,7 +21,7 @@ export class LogInComponent implements OnInit {
     if(this.loginform.valid){
       console.log("login successfully completed!.");
     }else{
-      alert('Invalid details!');
+      console.log("signup failed !.", this.loginform);
     }
   }
   

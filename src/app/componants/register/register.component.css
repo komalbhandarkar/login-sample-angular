@@ -1,16 +1,14 @@
 .full-width {
   width: 100%;
 }
-
 .bootstrap-wrapper {
   border: 3px solid rgb(170, 153, 153);
 
-  background-color: hsl(37, 100%, 88%);
+  background-color: hsl(180, 57%, 97%);
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.025rem;
   line-height: 2;
 }
-
 .mrg {
   margin: 100px 300px;
 }
