@@ -1,0 +1,16 @@
+.full-width {
+  width: 100%;
+  align-items: center;
+}
+
+.text-center{
+  align-items: center;
+}
+.bootstrap-wrapper {
+
+  background-color: hsl(37, 100%, 88%);
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing:normal;
+
+     line-height:1.5;
+}

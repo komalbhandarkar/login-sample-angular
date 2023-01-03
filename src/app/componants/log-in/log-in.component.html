@@ -1,0 +1,35 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row" style="margin: top 2px;">
+      <div class="col-md-6 offset-md-3">
+        <div class="text-center">
+          <h1 >Log In</h1>
+          <pre></pre>
+        
+            <form [name]="loginform" [formGroup]="loginform">
+            <mat-form-field class="full-width" style="width: 300px;" appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <input matInput formControlName="email" matInput placeholder="user@example.com"  name="email" type="email" required type="email">
+              
+              <mat-error *ngIf="loginform.value.email">Enter Email</mat-error>
+              <pre></pre> </mat-form-field>
+            <mat-form-field class="full-width" style="width: 300px;" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput formControlName="password1" matInput placeholder="Enter here" FormControlName="password1"  name="password1" type="password" required>
+              <mat-error *ngIf="loginform.value.password1">Password is combination of lower-case, upper-case, numbers and at least 9 char</mat-error>        
+              <pre></pre> </mat-form-field><pre>   </pre>
+            <div class="container">
+              <button  mat-raised-button="primary"  (click)="submitForLogin()"
+              [disabled]="!this.loginform.valid">Submit</button>
+            </div>
+          
+            <pre></pre>
+          </form>
+          <span> New User? click to </span><a routerLink="/register">Register</a>
+          <pre></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

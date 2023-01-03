@@ -1,0 +1,66 @@
+<div class="mrg">
+  <div class="bootstrap-wrapper">
+    <div class="container" style="text-align:center;">
+
+      <div class="row" style="margin-left  : auto;">
+        <div class="col-md-6 offset-md-3">
+          <h1 class=" tex-right"> Register Form </h1>
+          <pre></pre>
+          <form [formGroup]="form">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Fullname</mat-label>
+              <mat-icon matSuffix></mat-icon>
+              <input type="text" matInput formControlName="fullName">
+              <mat-error color="red" *ngIf="!this.form.valid">* Enter a valid username</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <mat-icon matSuffix></mat-icon>
+              <input type="email" matInput formControlName="Emailaddress">
+              <mat-error color="red" *ngIf="!this.form.valid">* Enter a valid Emailaddress</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Contact No</mat-label>
+              <input type="text" matInput formControlName="Mobilenumber" maxlength="10">
+              <mat-error color="red" *ngIf="!this.form.valid">Enter a valid Mobilenumber</mat-error>
+              <mat-icon matSuffix color="primary" (click)="changeButton()">trending_flat</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Password</mat-label>
+              <mat-icon matSuffix></mat-icon>
+              <input type="password" matInput formControlName="Userpassword">
+              <mat-error color="red" *ngIf="!this.form.valid">Enter a valid Userpassword</mat-error>
+            </mat-form-field>
+
+            <mat-form-field *ngIf="isFalse" class="full-width" appearance="outline">
+              <mat-label>otp</mat-label>
+              <input type="text" matInput formControlName="Otp" maxlength="6">
+              <mat-error color="red" *ngIf="!this.form.valid">Enter a valid Otp</mat-error>
+              <mat-icon matSuffix color="primary">check_circle</mat-icon>
+            </mat-form-field>
+
+            <div class=" container text-centre">
+
+              <button type="submit" mat-raised-button color="primary" (click)="submitForsignup()"> Register </button>
+
+              <pre>
+               </pre>
+            </div>
+
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
