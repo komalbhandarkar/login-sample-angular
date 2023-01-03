@@ -2,8 +2,6 @@
   width: 100%;
 }
 .bootstrap-wrapper {
-  border: 3px solid rgb(170, 153, 153);
-
   background-color: hsl(180, 57%, 97%);
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.025rem;

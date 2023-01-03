@@ -3,14 +3,15 @@
   align-items: center;
 }
 
-.text-center{
+.text-center {
   align-items: center;
 }
+
 .bootstrap-wrapper {
 
   background-color: hsl(180, 57%, 97%);
   font-family: 'Times New Roman', Times, serif;
-  letter-spacing:normal;
+  letter-spacing: normal;
 
-     line-height:1.5;
+  line-height: 1.5;
 }

@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { Validators,FormBuilder, FormControlName, FormControl } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { Validators, FormBuilder, FormControlName, FormControl } from '@angular/forms';
 
 
 @Component({
@@ -8,25 +8,25 @@ import { Validators,FormBuilder, FormControlName, FormControl } from '@angular/f
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent implements OnInit {
-  constructor(private fb:FormBuilder){ }
+  constructor(private fb: FormBuilder) { }
 
-  loginform=this.fb.group({
-   email: new FormControl('', [Validators.required, Validators.email]),
-   password1: new FormControl('', [Validators.required, Validators.pattern('^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$')])
+  loginform = this.fb.group({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password1: new FormControl('', [Validators.required, Validators.pattern('^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$')])
   })
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  submitForLogin(){
-    if(this.loginform.valid){
+  submitForLogin() {
+    if (this.loginform.valid) {
       console.log("login successfully completed!.");
-    }else{
+    } else {
       console.log("signup failed !.", this.loginform);
     }
   }
-  
-  Submitedform(){
-   
+
+  Submitedform() {
+
   }
-  
+
 }
